@@ -1,0 +1,86 @@
+id = "harunnoir/plumb"
+name = "Plumb"
+version = "1.0.1"
+plugin_api = 13
+author = "harunnoir"
+license = "MIT"
+deprecated = false
+icon = "wand"
+description = "Search, translate, copy, and save selected Wayland text from a Vim-friendly action panel."
+tags = ["panel", "productivity", "utility", "language", "privacy"]
+dependencies = ["wl-clipboard", "xdg-utils"]
+
+[[setting]]
+key = "notes_file"
+type = "file"
+label_key = "settings.notes_file.label"
+description_key = "settings.notes_file.description"
+default = "~/.local/share/plumb/notes.md"
+extensions = [".md", ".txt"]
+
+[[setting]]
+key = "daily_notes_dir"
+type = "folder"
+label_key = "settings.daily_notes_dir.label"
+description_key = "settings.daily_notes_dir.description"
+default = "~/.local/share/plumb/daily"
+
+[[setting]]
+key = "editor"
+type = "string"
+label_key = "settings.editor.label"
+description_key = "settings.editor.description"
+default = "nvim"
+
+[[setting]]
+key = "close_after_action"
+type = "bool"
+label_key = "settings.close_after_action.label"
+description_key = "settings.close_after_action.description"
+default = true
+
+[[setting]]
+key = "default_search"
+type = "select"
+label_key = "settings.default_search.label"
+description_key = "settings.default_search.description"
+default = "duckduckgo"
+options = [
+  { value = "duckduckgo", label_key = "settings.default_search.duckduckgo" },
+  { value = "google", label_key = "settings.default_search.google" },
+  { value = "brave", label_key = "settings.default_search.brave" },
+  { value = "startpage", label_key = "settings.default_search.startpage" },
+]
+
+[[setting]]
+key = "default_translate_target"
+type = "select"
+label_key = "settings.default_translate_target.label"
+description_key = "settings.default_translate_target.description"
+default = "ar"
+options = [
+  { value = "ar", label_key = "settings.language.ar" },
+  { value = "en", label_key = "settings.language.en" },
+  { value = "fr", label_key = "settings.language.fr" },
+  { value = "es", label_key = "settings.language.es" },
+  { value = "de", label_key = "settings.language.de" },
+  { value = "ja", label_key = "settings.language.ja" },
+]
+
+[[panel]]
+id = "actions"
+entry = "actions.luau"
+width = 580
+height = 640
+placement = "floating"
+position = "center"
+open_near_click = false
+dismiss_on_outside_click = true
+keyboard_focus = "exclusive"
+capture_keys = [
+  "j", "k", "h", "l",
+  "ctrl+n", "ctrl+p", "ctrl+d", "ctrl+u", "ctrl+g",
+  "Return", "g", "shift+g", "/", "q", "shift+/", ".",
+  "t", "s", "n", "y", "e",
+  "1", "2", "3", "4", "5", "6", "7", "8", "9"
+]

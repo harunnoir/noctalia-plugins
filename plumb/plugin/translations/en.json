@@ -1,6 +1,0 @@
-{
-  "settings.actions_file.label": "Actions tree",
-  "settings.actions_file.description": "JSON file containing the ordered folders and actions shown by Plumb.",
-  "settings.notes_file.label": "Notes inbox",
-  "settings.notes_file.description": "Markdown file used by actions whose type is note."
-}
