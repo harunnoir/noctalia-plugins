@@ -1,0 +1,15 @@
+# Generated from plugin manifests by tools/update_catalog.py.
+# Keep this file committed for custom Git source discovery.
+
+[[plugin]]
+id = "harunnoir/plumb"
+name = "Plumb"
+version = "1.0.1"
+author = "harunnoir"
+license = "MIT"
+icon = "wand"
+description = "Search, translate, copy, and save selected Wayland text from a Vim-friendly action panel."
+deprecated = false
+plugin_api = 13
+tags = ["panel", "productivity", "utility", "language", "privacy"]
+dependencies = ["wl-clipboard", "xdg-utils"]

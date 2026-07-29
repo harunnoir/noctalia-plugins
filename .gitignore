@@ -1,0 +1,4 @@
+noctalia.d.luau
+__pycache__/
+*.pyc
+.DS_Store
