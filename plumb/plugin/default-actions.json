@@ -1,0 +1,146 @@
+[
+  {
+    "label": "Search On Web",
+    "icon": "folder-search",
+    "description": "Choose a search engine.",
+    "children": [
+      {
+        "label": "DuckDuckGo",
+        "icon": "brand-duckduckgo",
+        "type": "url",
+        "url": "https://duckduckgo.com/?q={text}"
+      },
+      {
+        "label": "Google",
+        "icon": "brand-google",
+        "type": "url",
+        "url": "https://www.google.com/search?q={text}"
+      },
+      {
+        "label": "Wikipedia",
+        "icon": "brand-wikipedia",
+        "type": "url",
+        "url": "https://en.wikipedia.org/w/index.php?search={text}"
+      },
+      {
+        "label": "Brave",
+        "icon": "shield-search",
+        "type": "url",
+        "url": "https://search.brave.com/search?q={text}"
+      },
+      {
+        "label": "GitHub",
+        "icon": "brand-github",
+        "type": "url",
+        "url": "https://github.com/search?q={text}"
+      },
+      {
+        "label": "YouTube",
+        "icon": "brand-youtube",
+        "type": "url",
+        "url": "https://www.youtube.com/results?search_query={text}"
+      }
+    ]
+  },
+  {
+    "label": "Translate",
+    "icon": "language",
+    "description": "Choose a provider and language.",
+    "children": [
+      {
+        "label": "Google Translate",
+        "icon": "brand-google",
+        "children": [
+          {
+            "label": "English",
+            "icon": "language",
+            "type": "url",
+            "url": "https://translate.google.com/?sl=auto&tl=en&text={text}&op=translate"
+          },
+          {
+            "label": "Arabic",
+            "icon": "language",
+            "type": "url",
+            "url": "https://translate.google.com/?sl=auto&tl=ar&text={text}&op=translate"
+          },
+          {
+            "label": "French",
+            "icon": "language",
+            "type": "url",
+            "url": "https://translate.google.com/?sl=auto&tl=fr&text={text}&op=translate"
+          },
+          {
+            "label": "Spanish",
+            "icon": "language",
+            "type": "url",
+            "url": "https://translate.google.com/?sl=auto&tl=es&text={text}&op=translate"
+          },
+          {
+            "label": "German",
+            "icon": "language",
+            "type": "url",
+            "url": "https://translate.google.com/?sl=auto&tl=de&text={text}&op=translate"
+          },
+          {
+            "label": "Portuguese",
+            "icon": "language",
+            "type": "url",
+            "url": "https://translate.google.com/?sl=auto&tl=pt&text={text}&op=translate"
+          }
+        ]
+      },
+      {
+        "label": "DeepL",
+        "icon": "sparkles",
+        "children": [
+          {
+            "label": "English",
+            "icon": "language",
+            "type": "url",
+            "url": "https://www.deepl.com/translator#auto/en/{text}"
+          },
+          {
+            "label": "Arabic",
+            "icon": "language",
+            "type": "url",
+            "url": "https://www.deepl.com/translator#auto/ar/{text}"
+          },
+          {
+            "label": "French",
+            "icon": "language",
+            "type": "url",
+            "url": "https://www.deepl.com/translator#auto/fr/{text}"
+          },
+          {
+            "label": "Spanish",
+            "icon": "language",
+            "type": "url",
+            "url": "https://www.deepl.com/translator#auto/es/{text}"
+          },
+          {
+            "label": "German",
+            "icon": "language",
+            "type": "url",
+            "url": "https://www.deepl.com/translator#auto/de/{text}"
+          },
+          {
+            "label": "Portuguese",
+            "icon": "language",
+            "type": "url",
+            "url": "https://www.deepl.com/translator#auto/pt/{text}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Copy",
+    "icon": "copy",
+    "type": "copy"
+  },
+  {
+    "label": "Save as note",
+    "icon": "note",
+    "type": "note"
+  }
+]

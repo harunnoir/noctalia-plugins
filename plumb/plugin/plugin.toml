@@ -1,0 +1,34 @@
+id = "davamos/plumb"
+name = "Plumb"
+version = "1.1.0"
+plugin_api = 9
+author = "Davamos"
+license = "MIT"
+dependencies = ["wl-clipboard", "xdg-utils", "python3"]
+tags = ["productivity", "selection", "search", "translation", "notes"]
+icon = "wand"
+description = "A data-driven Noctalia action tree for selected text."
+
+[[panel]]
+id = "actions"
+entry = "panel.luau"
+width = 480
+height = 520
+placement = "floating"
+position = "center"
+open_near_click = false
+dismiss_on_outside_click = true
+
+  [[panel.setting]]
+  key = "actions_file"
+  type = "file"
+  label_key = "settings.actions_file.label"
+  description_key = "settings.actions_file.description"
+  default = "~/.config/noctalia/plumb/actions.json"
+
+  [[panel.setting]]
+  key = "notes_file"
+  type = "file"
+  label_key = "settings.notes_file.label"
+  description_key = "settings.notes_file.description"
+  default = "~/Notes/Inbox.md"
